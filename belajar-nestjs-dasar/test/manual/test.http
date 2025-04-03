@@ -1,0 +1,24 @@
+### First test
+GET http://localhost:3000
+
+### Second test
+GET http://localhost:3000/api/users/redirect
+
+### Third test
+GET http://localhost:8000/api/users/hello?name=Manuel+Leleuly
+
+### create user
+POST http://localhost:8000/api/users/create?first_name=Jane&last_name=Doe
+
+### login
+POST http://localhost:8000/api/users/login
+Content-Type: application/json
+
+{
+    "username": "manuel",
+    "password": "manuel"
+}
+
+### current
+GET http://localhost:8000/api/users/current
+x-username: 1
